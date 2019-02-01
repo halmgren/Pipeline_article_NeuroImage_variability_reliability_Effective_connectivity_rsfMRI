@@ -84,6 +84,8 @@ function [PEB,P]   = spm_dcm_peb_of_peb(P,M,field)
 % Karl Friston
 % $Id: spm_dcm_peb.m 6778 2016-04-22 11:51:29Z guillaume $
  
+%Adapted by Frederik Van de Steen (Ghent University) for hierarchical estimation
+%This code is NOT part of the SPM package, it is an adapted version for specific purpose
 
 % get filenames and set up
 %==========================================================================
