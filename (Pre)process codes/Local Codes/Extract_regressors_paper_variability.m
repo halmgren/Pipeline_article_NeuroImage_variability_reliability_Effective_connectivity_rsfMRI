@@ -115,10 +115,20 @@ if strcmp(procedure,'Basic') %Same for all procedures, so only done once
     movefile('RPV.nii',procedure);
     movefile('SPM.mat',procedure);
     movefile('VOI_CSF_signal_1.mat',procedure);
-    movefile('VOI_CSF_signal_eigen.nii',procedure);
+
+    %%% in spm12(r7487)
+    movefile('VOI_CSF_signal_1_eigen.nii',procedure);
+    %%% in spm12(r6906)
+%   movefile('VOI_CSF_signal_eigen.nii',procedure);
+
     movefile('VOI_CSF_signal_mask.nii',procedure);
     movefile('VOI_WM_signal_1.mat',procedure);
-    movefile('VOI_WM_signal_eigen.nii',procedure);
+    
+    %%% in spm12(r7487)
+    movefile('VOI_WM_signal_1_eigen.nii',procedure);
+   %%% in spm12(r6906)
+%   movefile('VOI_WM_signal_eigen.nii',procedure);
+
     movefile('VOI_WM_signal_mask.nii',procedure);
 end
 
