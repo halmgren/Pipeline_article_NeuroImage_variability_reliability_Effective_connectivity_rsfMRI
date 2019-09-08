@@ -233,9 +233,9 @@ if strcmp(procedure,'Basic')||strcmp(procedure,'GSR')
         movefile([Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/SPM/' procedure '/VOI_' ROI_list{VOI_number,1} '_1.mat'],[Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/VOI/' procedure '/' name_ROI_def])
 
 %%%%%%%%%% in spm12(r7487)   
-       movefile([Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/SPM/' procedure '/VOI_' ROI_list{VOI_number,1} '_1_eigen.nii'],[Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/VOI/' procedure '/' name_ROI_def])
+    %   movefile([Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/SPM/' procedure '/VOI_' ROI_list{VOI_number,1} '_1_eigen.nii'],[Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/VOI/' procedure '/' name_ROI_def])
 %%%%%%%%%% in spm12(r6906)
-     % movefile([Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/SPM/' procedure '/VOI_' ROI_list{VOI_number,1} '_eigen.nii'],[Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/VOI/' procedure '/' name_ROI_def])
+      movefile([Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/SPM/' procedure '/VOI_' ROI_list{VOI_number,1} '_eigen.nii'],[Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/VOI/' procedure '/' name_ROI_def])
 
         movefile([Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/SPM/' procedure '/VOI_' ROI_list{VOI_number,1} '_mask.nii'],[Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/VOI/' procedure '/' name_ROI_def])
     end
@@ -360,10 +360,10 @@ if strcmp(procedure,'ROI_Size')
             movefile([Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/SPM/Basic/VOI_' ROI_list{VOI_number,1} '_1.mat'],[Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/VOI/' procedure '/' name_ROI_def '/' num2str(4*size_ROI) '/'])
 
 %%%%%%%% in spm12(r7487)
-            movefile([Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/SPM/' procedure '/VOI_' ROI_list{VOI_number,1} '_1_eigen.nii'],[Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/VOI/' procedure '/' name_ROI_def])
+         %   movefile([Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/SPM/' procedure '/VOI_' ROI_list{VOI_number,1} '_1_eigen.nii'],[Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/VOI/' procedure '/' name_ROI_def])
 
 %%%%%%%% in spm12(r6906)
-          % movefile([Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/SPM/Basic/VOI_' ROI_list{VOI_number,1} '_eigen.nii'],[Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/VOI/' procedure '/' name_ROI_def '/' num2str(4*size_ROI) '/'])
+           movefile([Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/SPM/Basic/VOI_' ROI_list{VOI_number,1} '_eigen.nii'],[Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/VOI/' procedure '/' name_ROI_def '/' num2str(4*size_ROI) '/'])
 
             movefile([Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/SPM/Basic/VOI_' ROI_list{VOI_number,1} '_mask.nii'],[Work_dir '/' dataset '/sub-' sprintf('%02d',subject) '/' session_name '/func/VOI/' procedure '/' name_ROI_def '/' num2str(4*size_ROI) '/'])
         end
